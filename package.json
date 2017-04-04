@@ -2,16 +2,10 @@
   "name": "angular2-webpack2-aot",
   "version": "1.0.0",
   "description": "Angular2 AOT compile config with webpack2",
-  "keywords": [
-    "angular2",
-    "webpack2",
-    "aot",
-    "lazy loading"
-  ],
   "scripts": {
     "start": "webpack-dev-server --inline --progress --port 7777",
-    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
-    "build:aot": "rimraf dist && webpack --config config/webpack.aot.js --progress --profile"
+    "build:jit" : "webpack --config config/webpack.prod.js --progress --profile --bail",
+    "build": "webpack --config config/webpack.aot.js --progress --profile"
   },
   "repository": {
     "type": "git",
